@@ -1,0 +1,49 @@
+<html>
+<head><script src="http://content.jwplatform.com/libraries/4d1j5B3y.js"></script></head>
+<body>
+    <div id="video_container"></div>
+    <script type="text/javascript">
+    jwplayer("video_container").setup({
+        
+        key:"flwrHXtmm3150DVzKMSRcHDcRLUZG4IJUVuGbli+Veg=",
+        playlist: "http://content.jwplatform.com/jw6/P2oKaqqy.xml",
+        width: "60%",
+        aspectratio:"16:9",
+        autostart: "true",
+        controls: false
+    });
+</script>
+
+
+	<script src="http://jwpsrv.com/library/XGqpNOw9EeSPhgp+lcGdIw.js"></script>
+    <script type="text/javascript">
+        var elem = document.createElement("div");
+        elem.setAttribute("id", "myElement");
+        elem.appendChild(document.createTextNode("Loading..."));
+        document.body.appendChild(elem);
+        jwplayer("myElement").setup({
+            file: "http://most-popular-apps.com/vid/snake.mp4",
+            width: 300,
+            height: 250,
+            autostart: true,
+			mute:true,
+            advertising: {
+                client: 'vast',
+				 'skipoffset':5,  
+                adschedule: {
+                    adbreak1: {
+                        offset: "pre",
+                        tag: ['http://ads.adaptv.advertising.com/a/h/5atOEuwU4sFY1QTxm0Je8WmW_MOoa6D56tAivuwjGDFp_WQkaxkjeQ==?cb=%%CACHEBUSTER%%&pet=preroll&pageUrl=EMBEDDING_PAGE_URL&eov=eov', 'http://shadowcdn-01.yumenetworks.com/ym/1B3uA91O2152/1349/levLYHWa/vpaid_u_as3.xml', 'http://u-ads.adap.tv/a/h/CbyYsMcIh10+XoGWvwRuGArwmci9atPoLiGQaGjtyrT4ht6z4qOJpQ==?cb=%%CACHEBUSTER%%&pageUrl=http%3A%2F%2Ftest.com&eov=eov']
+                    },
+                    adbreak2: {
+                        offset: "post",
+                        tag: ['http://ads.adaptv.advertising.com/a/h/5atOEuwU4sFY1QTxm0Je8WmW_MOoa6D56tAivuwjGDFp_WQkaxkjeQ==?cb=%%CACHEBUSTER%%&pet=preroll&pageUrl=EMBEDDING_PAGE_URL&eov=eov', 'http://u-ads.adap.tv/a/h/CbyYsMcIh10+XoGWvwRuGArwmci9atPoLiGQaGjtyrT4ht6z4qOJpQ==?cb=%%CACHEBUSTER%%&pageUrl=http%3A%2F%2Ftest.com&eov=eov']
+                    }
+                }
+            }
+        });
+    </script>
+
+
+</body>
+</html>

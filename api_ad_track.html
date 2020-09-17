@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="jwsupport:title" content="Embed using JavaScript API">
+    <meta name="jwsupport:description" content="This embed shows basic event handlers with the JavaScript API.">
+    <meta name="jwsupport:keywords" content="api, javascript, callback, event, handlers, onComplete, onPlay, onPause, onDisplayClick">   
+    <meta name="jwsupport:type" content="api">
+    <link rel="stylesheet" href="http://qa.jwplayer.com/support-demos/css/all.min.css">    
+    <script src="http://content.jwplatform.com/libraries/KrZlT9bl.js"></script> 
+    <script src="http://qa.jwplayer.com/support-demos/js/all.min.js"></script>       
+</head>
+<body>
+
+    <div class="container">
+        <h2>Basic JS api Demo</h2>
+        <hr />
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div id="player"></div>
+                <hr />
+                <h6>Log Events</h6>
+                <ol id="messages">
+                </ol>
+            </div>
+            <div class="col-sm-6" id="place-code">
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript" class="pretty">
+function logMessage(message) {
+    document.getElementById('messages').innerHTML += '<li>' + message + '</li>';
+}
+jwplayer("player").setup({
+    file: 'http://qa.jwplayer.com/support-demos/static/bunny.mp4',
+    image: 'http://qa.jwplayer.com/support-demos/static/bunny.jpg',
+    width: '100%'
+});
+jwplayer("player").onAdPlay(function() {
+    logMessage('Ad started playing');
+});
+jwplayer("player").onReady(function() {
+    logMessage('Video player is ready to go');
+});
+</script>   
+
+</body>
+</html>

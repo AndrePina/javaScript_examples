@@ -1,0 +1,21 @@
+<html>
+<head>    
+<script type="text/javascript" src="http://content.jwplatform.com/libraries/LrMOVzEe.js"></script>
+</head>
+<body>
+<div id="player"></div>
+<script type="text/javascript">
+	var params = {
+		playlist: "http://content.jwplatform.com/jw6/P2oKaqqy.xml",
+		width: "60%",
+		aspectratio:"16:9",
+		autostart: "true",
+		controls: "false"
+	}
+	jwplayer("player").setup(params);
+	jwplayer().onDisplayClick(function() {
+		jwplayer().pause();
+	});
+</script>
+</body>
+</html>

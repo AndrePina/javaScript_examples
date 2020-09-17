@@ -1,0 +1,22 @@
+<html>
+<head>    
+<script src="http://jwpsrv.com/library/WwAEXKyxEeSuABJtO5t17w.js"></script>
+<script>jwplayer.key="onirYJS0pf/kthkCv0fB8BW3Xo6WaQOlELKcGKzPp/DQ0S9oEDBIuA=="</script>
+</head>
+<body>
+<div id="player"></div>
+<script type="text/javascript">
+	var params = {
+		playlist: "http://content.jwplatform.com/jw6/toqclEfi.xml",
+		width: "60%",
+		aspectratio:"16:9",
+		autostart: "true",
+		controls: "false"
+	}
+	jwplayer("player").setup(params);
+	jwplayer().onDisplayClick(function() {
+		jwplayer().pause();
+	});
+</script>
+</body>
+</html>

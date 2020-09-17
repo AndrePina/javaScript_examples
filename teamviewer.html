@@ -1,0 +1,35 @@
+<html>
+<head>  
+<script type="text/javascript" src="http://content.jwplatform.com/libraries/ZN5ajbL3.js"></script>
+</head>
+<body>
+<div id="video_container"></div>
+<script type="text/javascript">
+	jwplayer("video_container").setup({
+		playlist: [{
+			file: "http://content.jwplatform.com/manifests/RZ5GqiQL.m3u8",
+			image: "http://content.jwplatform.com/thumbs/RZ5GqiQL-720.jpg",
+			tracks: [{
+				file: "http://content.jwplatform.com/tracks/MsFxgo1y.srt", 
+				label: "English",
+				kind: "captions",
+				"default": true 
+			},{
+				file: "http://content.jwplatform.com/tracks/bgNYXyWz.srt", 
+				label: "French",
+				kind: "captions"
+			},{
+				file: "http://content.jwplatform.com/tracks/yDR4MbqS.srt", 
+				label: "Arabic",
+				kind: "captions"
+			},{
+				file: "http://content.jwplatform.com/tracks/Mbn5Cqrd.srt", 
+				label: "Chinese",
+				kind: "captions"
+			}],
+		}],
+		width: "60%"
+	});
+</script>
+</body>
+</html>
